@@ -34,10 +34,11 @@
             if (isSelected)
             {
                 var delta = Camera.main.WorldToScreenPoint(this.transform.position) - Input.mousePosition;
-                var angle = (float)Math.Atan2(delta.y, delta.x);
+                var angle = (float)(Math.Atan2(delta.y, delta.x) * Mathf.Rad2Deg);
+
                 this.selector.transform.rotation = Quaternion.Euler(
                     this.selectorAngle.x,
-                    this.selectorAngle.y - (angle * Mathf.Rad2Deg),
+                    this.selectorAngle.y - angle,
                     this.selectorAngle.z);
             }
         }
