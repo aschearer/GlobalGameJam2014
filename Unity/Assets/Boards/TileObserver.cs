@@ -1,4 +1,4 @@
-﻿namespace Assets
+﻿namespace Assets.Boards
 {
     using System.Collections.Generic;
 
