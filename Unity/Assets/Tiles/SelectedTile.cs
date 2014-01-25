@@ -8,6 +8,8 @@
     {
         public string SelectedTagName = "Selected";
 
+        public string ActiveTagName = "Active";
+
         public float YOffset = 0.25f;
 
         private float y;
@@ -23,14 +25,25 @@
             this.selectorAngle = this.selector.transform.rotation.eulerAngles;
         }
 
+        public void Activate()
+        {
+            this.tag = this.ActiveTagName;
+        }
+
+        public void Deactivate()
+        {
+            this.tag = null;
+        }
+
         public void Update()
         {
             bool isSelected = this.CompareTag(this.SelectedTagName);
+            bool isActive = this.CompareTag(this.ActiveTagName);
             float offset = isSelected ? this.YOffset : 0;
             var position = this.transform.position;
             this.transform.position = new Vector3(position.x, this.y + offset, position.z);
 
-            this.selector.SetActive(isSelected);
+            this.selector.SetActive(isSelected || isActive);
             if (isSelected)
             {
                 var delta = Camera.main.WorldToScreenPoint(this.transform.position) - Input.mousePosition;
