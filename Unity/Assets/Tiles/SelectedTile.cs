@@ -14,10 +14,13 @@
 
         private GameObject selector;
 
+        private Vector3 selectorAngle;
+
         public void Start()
         {
             this.y = this.transform.position.y;
             this.selector = this.transform.FindChild("Selector").gameObject;
+            this.selectorAngle = this.selector.transform.rotation.eulerAngles;
         }
 
         public void Update()
@@ -32,7 +35,10 @@
             {
                 var delta = Camera.main.WorldToScreenPoint(this.transform.position) - Input.mousePosition;
                 var angle = (float)Math.Atan2(delta.y, delta.x);
-                this.selector.transform.rotation = Quaternion.Euler(0, -angle * Mathf.Rad2Deg, 0);
+                this.selector.transform.rotation = Quaternion.Euler(
+                    this.selectorAngle.x,
+                    this.selectorAngle.y - (angle * Mathf.Rad2Deg),
+                    this.selectorAngle.z);
             }
         }
     }
