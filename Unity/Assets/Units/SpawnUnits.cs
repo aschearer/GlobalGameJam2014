@@ -8,11 +8,17 @@
 
         public int NumberOfEnemiesToSpawn = 20;
 
-        public float SecondsTillSpawn = 30;
+        public float SpawnDuration = 1;
 
-        private float elapsedTime;
+        public float SecondsTillSpawn = 5;
+
+        private float spawnTimer;
+
+        private float createUnitTimer;
 
         private GameObject board;
+
+        private int enemiesToSpawn;
 
         public void Start()
         {
@@ -21,12 +27,21 @@
 
         public void Update()
         {
-            this.elapsedTime += Time.deltaTime;
-            if (this.elapsedTime >= this.SecondsTillSpawn)
+            this.spawnTimer += Time.deltaTime;
+            if (this.spawnTimer >= this.SecondsTillSpawn)
             {
-                this.elapsedTime -= this.SecondsTillSpawn;
-                for (int i = 0; i < this.NumberOfEnemiesToSpawn; i++)
+                this.spawnTimer -= this.SecondsTillSpawn;
+                this.enemiesToSpawn += this.NumberOfEnemiesToSpawn;
+            }
+
+            if (this.enemiesToSpawn > 0)
+            {
+                this.createUnitTimer += Time.deltaTime;
+                var timeBetweenUnitSpawns = this.SpawnDuration / this.NumberOfEnemiesToSpawn;
+                if (this.createUnitTimer >= timeBetweenUnitSpawns && this.enemiesToSpawn > 0)
                 {
+                    this.createUnitTimer -= timeBetweenUnitSpawns;
+                    this.enemiesToSpawn--;
                     var position = this.transform.position;
                     var unit = (GameObject)GameObject.Instantiate(this.UnitPrefab, position, Quaternion.identity);
                     unit.transform.parent = this.board.transform;

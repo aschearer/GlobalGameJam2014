@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -39,23 +38,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3ba438bfe8a8749a554d1089c7b8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 0}
-  NumberOfEnemiesToSpawn: 20
-  SecondsTillSpawn: 30
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c3ba438bfe8a8749a554d1089c7b8dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
   NumberOfEnemiesToSpawn: 20
-  SecondsTillSpawn: 30
+  SpawnDuration: 1
+  SecondsTillSpawn: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
