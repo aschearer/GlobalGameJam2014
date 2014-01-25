@@ -189,6 +189,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: NumberOfColumns
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
   m_RootGameObject: {fileID: 1857682300}
@@ -222,9 +226,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e585d8e2fa2b99e428f991bde2551ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOfColumns: 4
+  NumberOfColumns: 6
   NumberOfRows: 4
   TilePrefab: {fileID: 100000, guid: ede3f20dad2927b46b9584ccf62bfe7f, type: 2}
+  WhiteMaterial: {fileID: 2100000, guid: 3451923a755a4d64285eb2101ee50d01, type: 2}
+  BlackMaterial: {fileID: 2100000, guid: 55a9fee0471f5e04d9ae92fe13c40889, type: 2}
 --- !u!4 &1857682302
 Transform:
   m_ObjectHideFlags: 0

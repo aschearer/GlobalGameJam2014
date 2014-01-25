@@ -10,8 +10,13 @@
 
         public GameObject TilePrefab;
 
+        public Material WhiteMaterial;
+
+        public Material BlackMaterial;
+
         public void Start()
         {
+            int i = 0;
             for (int col = 0; col < this.NumberOfColumns; col++)
             {
                 for (int row = 0; row < this.NumberOfRows; row++)
@@ -19,7 +24,12 @@
                     var position = new Vector3(col, 0, row);
                     var tile = (GameObject)GameObject.Instantiate(this.TilePrefab, position, Quaternion.identity);
                     tile.transform.parent = this.transform;
+                    bool isWhite = i % 2 == 0;
+                    tile.renderer.material = isWhite ? this.WhiteMaterial : this.BlackMaterial;
+                    i++;
                 }
+
+                i++;
             }
 
             this.CenterBoard();
