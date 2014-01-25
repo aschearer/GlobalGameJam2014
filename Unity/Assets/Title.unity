@@ -87,7 +87,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.1788435
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1213288287}
   - 114: {fileID: 1213288286}
+  - 65: {fileID: 1213288288}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -295,10 +296,22 @@ Transform:
   m_PrefabInternal: {fileID: 170118395}
   m_GameObject: {fileID: 1213288285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1788435, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1213288288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1213288285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1534360619
 Prefab:
   m_ObjectHideFlags: 0
