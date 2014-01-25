@@ -35,10 +35,11 @@
             {
                 var delta = Camera.main.WorldToScreenPoint(this.transform.position) - Input.mousePosition;
                 var angle = (float)(Math.Atan2(delta.y, delta.x) * Mathf.Rad2Deg);
+                var snappedAngle = (float)(Math.Floor((angle + 45) / 90) * 90);
 
                 this.selector.transform.rotation = Quaternion.Euler(
                     this.selectorAngle.x,
-                    this.selectorAngle.y - angle,
+                    this.selectorAngle.y - snappedAngle,
                     this.selectorAngle.z);
             }
         }
