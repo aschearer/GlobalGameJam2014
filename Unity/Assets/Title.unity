@@ -269,6 +269,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1857682302}
   - 114: {fileID: 1857682301}
+  - 114: {fileID: 1857682303}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -304,3 +305,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1857682303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1534360619}
+  m_GameObject: {fileID: 1857682300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d98a580fafa13c4eb6347de5ee41b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
