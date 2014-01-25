@@ -6,8 +6,8 @@ Obj/
 UnityGenerated/
 Library/
 *.unityproj
-Crush3.Unity/*.csproj
-Crush3.Unity/*.sln
+Unity/*.csproj
+Unity/*.sln
 
 #################
 ## Eclipse
