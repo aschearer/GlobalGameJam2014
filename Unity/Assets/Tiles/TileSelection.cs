@@ -4,13 +4,9 @@
 
     public class TileSelection : MonoBehaviour
     {
-        public GameObject VillagePrefab;
-
         private GameObject selected;
 
         private int tileLayer;
-
-        private GameObject building;
 
         public void Start()
         {
