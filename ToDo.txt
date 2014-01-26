@@ -9,3 +9,7 @@
 - Fix movement glitches, especially when speed up
 
 - Fix enemy warnings
+
+- Fix bug where lava or mine appear off board
+
+- Only allow lava, mines to appear in center

@@ -209,7 +209,7 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+    - target: {fileID: 0}
       propertyPath: SecondsWarningTillSpawn
       value: 5
       objectReference: {fileID: 0}
@@ -1177,9 +1177,9 @@ GameObject:
   - 114: {fileID: 1857682301}
   - 114: {fileID: 1857682304}
   - 114: {fileID: 1857682303}
-  - 114: {fileID: 1857682305}
   - 114: {fileID: 1857682306}
   - 114: {fileID: 1857682307}
+  - 114: {fileID: 1857682305}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -1251,20 +1251,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857682300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4074d7b035e62dd4c9d60d72af4ff519, type: 3}
+  m_Script: {fileID: 11500000, guid: 5dfc572642ddb23489cf521b073a7e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
+  UnitPrefab: {fileID: 0}
   NumberOfEnemiesToSpawn: 1
-  EnemyIncreasePerWave: 1
-  SpawnDuration: 1
+  EnemyIncreasePerWave: 2
   SecondsTillSpawn: 10
-  SecondsWarningTillSpawn: 5
   SecondsTillSpawnDecreasePerWave: .100000001
   MinSecondsTillSpawn: 1
-  EvilUnitMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a, type: 2}
-  EvilTileWarningMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a,
-    type: 2}
 --- !u!114 &1857682306
 MonoBehaviour:
   m_ObjectHideFlags: 0
