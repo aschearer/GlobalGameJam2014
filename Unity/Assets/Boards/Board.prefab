@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e585d8e2fa2b99e428f991bde2551ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOfColumns: 4
-  NumberOfRows: 4
+  NumberOfColumns: 16
+  NumberOfRows: 10
   TilePrefab: {fileID: 100000, guid: ede3f20dad2927b46b9584ccf62bfe7f, type: 2}
   WhiteMaterial: {fileID: 2100000, guid: 3451923a755a4d64285eb2101ee50d01, type: 2}
   BlackMaterial: {fileID: 2100000, guid: 55a9fee0471f5e04d9ae92fe13c40889, type: 2}
