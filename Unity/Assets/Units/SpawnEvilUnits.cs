@@ -39,7 +39,10 @@
                     this.createUnitTimer -= timeBetweenUnitSpawns;
                     this.enemiesToSpawn--;
                     var position = this.spawnTile.transform.position;
-                    var unit = (GameObject)GameObject.Instantiate(this.UnitPrefab, position, Quaternion.identity);
+                    var unit = (GameObject)GameObject.Instantiate(
+                        this.UnitPrefab, 
+                        position, 
+                        this.spawnTile.transform.rotation);
                     unit.transform.parent = this.transform;
                 }
             }

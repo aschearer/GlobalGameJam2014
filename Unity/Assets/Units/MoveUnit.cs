@@ -17,7 +17,8 @@
 		private float startTime;
 
 		public void Start()
-		{	
+		{
+		    this.targetAngle = this.transform.rotation.eulerAngles.y;
 			model = this.transform.Find("Model").gameObject;
 			model.transform.localPosition = new Vector3(Random.Range(-DisplayOffset, DisplayOffset),
 			                                            0.5f, 

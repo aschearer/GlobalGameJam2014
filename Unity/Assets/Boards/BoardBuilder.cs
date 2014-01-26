@@ -34,7 +34,25 @@
 
                     if (col == 0 || col == this.NumberOfColumns || row == 0 || row == this.NumberOfRows)
                     {
-                        this.CreateEvilTile(col, row);
+                        float angle = 0;
+                        if (row == 0)
+                        {
+                            angle = 0;
+                        }
+                        else if (col == 0)
+                        {
+                            angle = 90;
+                        }
+                        else if (col == this.NumberOfColumns)
+                        {
+                            angle = 270;
+                        }
+                        else if (row == this.NumberOfRows)
+                        {
+                            angle = 180;
+                        }
+
+                        this.CreateEvilTile(col, row, angle);
                     }
                     else
                     {
@@ -53,10 +71,13 @@
             this.CenterBoard();
         }
 
-        private void CreateEvilTile(int col, int row)
+        private void CreateEvilTile(int col, int row, float angle)
         {
             var position = new Vector3(col, 0, row);
-            var tile = (GameObject)GameObject.Instantiate(this.EvilTilePrefab, position, this.EvilTilePrefab.transform.rotation);
+            var tile = (GameObject)GameObject.Instantiate(
+                this.EvilTilePrefab, 
+                position, 
+                Quaternion.Euler(0, angle, 0));
             tile.transform.parent = this.transform;
         }
 
@@ -67,10 +88,6 @@
             tile.transform.parent = this.transform;
             bool isWhite = i % 2 == 0;
             tile.renderer.material = isWhite ? this.WhiteMaterial : this.BlackMaterial;
-        }
-
-        public void Update()
-        {
         }
 
         private void CenterBoard()
