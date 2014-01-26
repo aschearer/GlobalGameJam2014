@@ -9,9 +9,17 @@
 
     public class MoveUnit : MonoBehaviour
     {
-        public Vector3 Velocity = new Vector3(0, 0, 1);
+		public float StartSpeed = 10;
+
+		public float MaxSpeed = 30;
+
+		public float SpeedIncrement = 10;
 
 		public float DisplayOffset = 1f;
+
+		private float speed;
+		
+		private Vector3 velocity;
 
 		private GameObject model;
 
@@ -27,6 +35,14 @@
 			                                            0.5f, 
 			                                            Random.Range(-DisplayOffset, DisplayOffset));
 			startTime = Time.time;
+			speed = StartSpeed;
+			velocity = new Vector3(0, 0, speed);
+		}
+
+		public void SpeedUp()
+		{
+			speed += SpeedIncrement;
+			speed = Mathf.Min(MaxSpeed, speed);
 		}
 
         public void Rotate(float targetAngle)
@@ -43,7 +59,9 @@
         }
 
         public void Update()
-        {
+		{
+			this.velocity.z = speed;
+
             var currentAngle = this.transform.rotation.eulerAngles.y;
             if (Mathf.Abs(this.targetAngle - currentAngle) > 0.005f)
             {
@@ -52,7 +70,7 @@
             }
 
             var position = this.transform.position;
-            position += this.transform.rotation * this.Velocity * Time.deltaTime;
+            position += this.transform.rotation * this.velocity * Time.deltaTime;
             this.rigidbody.MovePosition(position);
 
 			model.transform.localPosition = new Vector3(model.transform.localPosition.x,
