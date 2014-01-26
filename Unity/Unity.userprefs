@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Boards\BoardBuilder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Units\SpawnEvilUnits.cs">
     <Files>
-      <File FileName="Assets\Units\SpawnEvilUnits.cs" Line="66" Column="52" />
-      <File FileName="Assets\Boards\BoardBuilder.cs" Line="79" Column="43" />
+      <File FileName="Assets\Units\SpawnEvilUnits.cs" Line="49" Column="17" />
+      <File FileName="Assets\Boards\BoardBuilder.cs" Line="65" Column="18" />
+      <File FileName="Assets\Units\SpawnUnits.cs" Line="25" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

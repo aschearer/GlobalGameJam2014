@@ -74,6 +74,46 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1001 &95710002
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+  m_RootGameObject: {fileID: 1857682300}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &119511884
 Prefab:
   m_ObjectHideFlags: 0
@@ -797,70 +837,6 @@ Transform:
   - {fileID: 1003605926}
   - {fileID: 1076395302}
   m_Father: {fileID: 0}
---- !u!1001 &1534360619
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: NumberOfColumns
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: NumberOfRows
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: EnemyIncreasePerWave
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: NumberOfEnemiesToSpawn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: SecondsTillSpawn
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-      propertyPath: SecondsTillSpawnDecreasePerWave
-      value: .100000001
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-  m_RootGameObject: {fileID: 1857682300}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1579404963
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +910,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
+  m_PrefabInternal: {fileID: 95710002}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1857682302}
@@ -955,7 +931,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
     type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
+  m_PrefabInternal: {fileID: 95710002}
   m_GameObject: {fileID: 1857682300}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -972,7 +948,7 @@ MonoBehaviour:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
+  m_PrefabInternal: {fileID: 95710002}
   m_GameObject: {fileID: 1857682300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -984,7 +960,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
     type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
+  m_PrefabInternal: {fileID: 95710002}
   m_GameObject: {fileID: 1857682300}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -996,7 +972,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
     type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
+  m_PrefabInternal: {fileID: 95710002}
   m_GameObject: {fileID: 1857682300}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1010,7 +986,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
     type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
+  m_PrefabInternal: {fileID: 95710002}
   m_GameObject: {fileID: 1857682300}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1022,20 +998,9 @@ MonoBehaviour:
   EnemyIncreasePerWave: 1
   SpawnDuration: 1
   SecondsTillSpawn: 10
+  SecondsWarningTillSpawn: 3
   SecondsTillSpawnDecreasePerWave: .100000001
   MinSecondsTillSpawn: 1
-  EvilUnitMaterial: {fileID: 2100000, guid: c1f8ad633fee11144a6863d94cbef6cd, type: 2}
---- !u!114 &1857682306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400010, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
+  EvilUnitMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a, type: 2}
+  EvilTileWarningMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a,
     type: 2}
-  m_PrefabInternal: {fileID: 1534360619}
-  m_GameObject: {fileID: 1857682300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd286f05785cdf646a1541bd9497b2c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeTillNextGoldMine: 4
-  GoldMinePrefab: {fileID: 100000, guid: e5fe776e6d927634b9e946ee3273beac, type: 2}
