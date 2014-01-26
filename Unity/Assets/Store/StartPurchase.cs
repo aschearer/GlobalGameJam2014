@@ -4,6 +4,8 @@
 
     public class StartPurchase : MonoBehaviour
     {
+        public GameObject PurchasePrefab;
+
         private Checkout checkout;
 
         public void Start()
@@ -13,7 +15,7 @@
 
         public void OnMouseDown()
         {
-            this.checkout.SendMessage("StartCheckout", this.gameObject);
+            this.checkout.SendMessage("StartCheckout", this.PurchasePrefab);
         }
     }
 }
