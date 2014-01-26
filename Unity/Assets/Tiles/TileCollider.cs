@@ -1,5 +1,7 @@
 ﻿namespace Assets.Tiles
 {
+    using System;
+
     using UnityEngine;
 
     public class TileCollider : MonoBehaviour
@@ -17,10 +19,12 @@
         {
             if (this.CompareTag(this.ActiveTagName))
             {
-                collider.gameObject.transform.rotation = Quaternion.Euler(
-                    0,
-                    this.arrowTransform.rotation.eulerAngles.y - 90,
-                    0);
+                collider.SendMessage("Rotate", this.arrowTransform.transform.eulerAngles.y - 90);
+
+                Mathf.LerpAngle(
+                    collider.gameObject.transform.rotation.eulerAngles.y, 
+                    this.arrowTransform.rotation.eulerAngles.y - 90, 
+                    0.5f);
             }
         }
     }

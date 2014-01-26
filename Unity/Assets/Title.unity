@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
-  NumberOfEnemiesToSpawn: 1
+  NumberOfEnemiesToSpawn: 12
   SpawnDuration: 1
   SecondsTillSpawn: 1
 --- !u!4 &1054443526
@@ -310,10 +310,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: NumberOfEnemiesToSpawn
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
+      propertyPath: SpawnDuration
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
