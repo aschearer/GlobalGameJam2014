@@ -44,7 +44,7 @@
             if (Physics.Raycast(ray, out hit, 100, layerMask))
             {
                 this.building.SetActive(true);
-                this.building.transform.position = hit.collider.transform.position + new Vector3(0, 0.3f, 0);
+                this.building.transform.position = hit.collider.transform.position;
             }
             else
             {
