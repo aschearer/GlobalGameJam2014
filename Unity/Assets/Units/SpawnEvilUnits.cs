@@ -60,8 +60,8 @@
                     var position = this.spawnTile.transform.position;
                     var unit = (GameObject)GameObject.Instantiate(
                         this.UnitPrefab, 
-                        position, 
-                        this.spawnTile.transform.rotation);
+                        position,
+						Quaternion.Euler(new Vector3(0, 180, 0)));
                     unit.layer = this.layer;
                     unit.transform.parent = this.transform;
                     unit.transform.FindChild("Model").renderer.material = this.EvilUnitMaterial;

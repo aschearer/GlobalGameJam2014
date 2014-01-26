@@ -51,7 +51,7 @@
                             angle = 180;
                         }
 
-                        this.CreateEvilTile(col, row, angle);
+                        this.CreateEvilTile(col, row);
                     }
                     else
                     {
@@ -70,14 +70,11 @@
             this.CenterBoard();
         }
 
-        private void CreateEvilTile(int col, int row, float angle)
+        private void CreateEvilTile(int col, int row)
         {
-            var position = new Vector3(col, 0, row);
-            var tile = (GameObject)GameObject.Instantiate(
-                this.EvilTilePrefab, 
-                position, 
-                Quaternion.Euler(0, angle, 0));
-            tile.transform.parent = this.transform;
+			var position = new Vector3(col, 0, row);
+			var tile = (GameObject)GameObject.Instantiate(this.EvilTilePrefab, position, this.EvilTilePrefab.transform.rotation);
+			tile.transform.parent = this.transform;
         }
 
         private void CreateTile(int col, int row, int i)
