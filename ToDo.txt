@@ -1,7 +1,3 @@
-- Unit vs. enemy collision.
-
-	- Mutual killed.
-
 - Lose condition. (X enemies make it to the bottom)
 
 - Escalating enemy spawns.
@@ -11,8 +7,6 @@
 - Randomly placed buildings.
 
 - "Danger building" that kills units.
-
-- Arrows can't be overwritten.
 
 - Gold.
 
