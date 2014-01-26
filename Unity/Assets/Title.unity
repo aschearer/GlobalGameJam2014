@@ -111,7 +111,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
       propertyPath: NumberOfUnitsToSpawn
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
+      propertyPath: SecondsTillSpawn
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
+      propertyPath: NumberOfSpawns
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
@@ -617,10 +625,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
-  NumberOfUnitsToSpawn: 10
+  NumberOfUnitsToSpawn: 5
   SpawnDuration: 2
-  SecondsTillSpawn: 2
-  NumberOfSpawns: 1
+  SecondsTillSpawn: 5
+  NumberOfSpawns: 3
 --- !u!4 &1114608929
 Transform:
   m_ObjectHideFlags: 0
