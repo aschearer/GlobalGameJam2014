@@ -1,5 +1,7 @@
 ﻿namespace Assets.Tiles
 {
+    using Assets.Store;
+
     using UnityEngine;
 
     public class TileSelection : MonoBehaviour
@@ -8,13 +10,21 @@
 
         private int tileLayer;
 
+        private Checkout checkout;
+
         public void Start()
         {
+            this.checkout = GameObject.Find("Store").GetComponent<Checkout>();
             this.tileLayer = LayerMask.NameToLayer("Tiles");
         }
 
         public void OnMouseDown()
         {
+            if (this.checkout.SelectedBuildingPrefab != null)
+            {
+                return;
+            }
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             int layerMask = 1 << this.tileLayer;

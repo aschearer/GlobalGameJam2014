@@ -778,6 +778,7 @@ MonoBehaviour:
   NumberOfColumns: 6
   NumberOfRows: 6
   TilePrefab: {fileID: 100000, guid: ede3f20dad2927b46b9584ccf62bfe7f, type: 2}
+  EvilTilePrefab: {fileID: 100000, guid: 48dba19eca3a6ee4b8011921d616eb90, type: 2}
   WhiteMaterial: {fileID: 2100000, guid: 3451923a755a4d64285eb2101ee50d01, type: 2}
   BlackMaterial: {fileID: 2100000, guid: 55a9fee0471f5e04d9ae92fe13c40889, type: 2}
 --- !u!4 &1857682302
