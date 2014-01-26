@@ -1,15 +1,3 @@
-- Lose condition. (X enemies make it to the bottom)
-
-- Escalating enemy spawns.
-
-- Win condition. (Time survived)
-
-- Randomly placed buildings.
-
-- Fix movement glitches, especially when speed up
-
-- Fix enemy warnings
-
 - Fix bug where lava or mine appear off board
 
 - Only allow lava, mines to appear in center
