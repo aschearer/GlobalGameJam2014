@@ -1,8 +1,11 @@
 ﻿namespace Assets.Units
 {
+    using System;
     using System.Collections;
 
     using UnityEngine;
+
+    using Random = UnityEngine.Random;
 
     public class MoveUnit : MonoBehaviour
     {
@@ -28,6 +31,14 @@
 
         public void Rotate(float targetAngle)
         {
+            targetAngle = (targetAngle + 360) % 360;
+            var currentAngle = (this.transform.rotation.eulerAngles.y + 360) % 360;
+            var delta = Math.Abs(currentAngle - targetAngle);
+            if (Math.Abs(delta - 180) < 10)
+            {
+                this.transform.rotation = Quaternion.Euler(0, targetAngle, 0);
+            }
+
             this.targetAngle = targetAngle;
         }
 

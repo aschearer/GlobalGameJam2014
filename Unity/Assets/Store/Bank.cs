@@ -17,6 +17,11 @@
             this.gold -= price;
         }
 
+        public bool CanPurchase(int price)
+        {
+            return this.gold >= price;
+        }
+
         public void Start()
         {
             this.gold = this.StartingGold;
