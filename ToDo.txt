@@ -11,13 +11,3 @@
 - Gold.
 
 	- UI to display player's gold.
-
-	- Building gold costs.
-
-	- Gradual gold accumulation over time.
-
-- Gold mine.
-
-	- Converts units into gold.
-
-	- Randomly placed.
