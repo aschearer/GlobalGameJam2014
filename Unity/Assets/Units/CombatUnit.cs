@@ -14,16 +14,24 @@
 
         private int buildingLayer;
 
+        private int killzone;
+
         public void Start()
         {
             this.evilLayer = LayerMask.NameToLayer("Evil Units");
             this.buildingLayer = LayerMask.NameToLayer("Buildings");
             this.isEvil = this.gameObject.layer == this.evilLayer;
+            this.killzone = LayerMask.NameToLayer("Killzone");
         }
 
         public void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag(CombatUnit.StoreTag))
+            {
+                return;
+            }
+
+            if (other.gameObject.layer == this.killzone)
             {
                 return;
             }

@@ -195,7 +195,7 @@ GameObject:
   - 114: {fileID: 190028815}
   m_Layer: 11
   m_Name: Bottom Killzone
-  m_TagString: Untagged
+  m_TagString: Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -859,6 +859,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1494365174}
   - 132: {fileID: 1494365173}
+  - 114: {fileID: 1494365175}
   m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
@@ -900,6 +901,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1446942138}
+--- !u!114 &1494365175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494365172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb9606898424e844be10494db0eb7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingLife: 100
+  DamagePerUnit: 1
 --- !u!1 &1579404963
 GameObject:
   m_ObjectHideFlags: 0
