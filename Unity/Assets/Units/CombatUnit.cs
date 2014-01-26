@@ -6,6 +6,8 @@
 
     public class CombatUnit : MonoBehaviour
     {
+        private const string StoreTag = "Store";
+
         private int evilLayer;
 
         private bool isEvil;
@@ -21,6 +23,11 @@
 
         public void OnTriggerEnter(Collider other)
         {
+            if (other.gameObject.CompareTag(CombatUnit.StoreTag))
+            {
+                return;
+            }
+
             if (this.isEvil || other.gameObject.layer == this.evilLayer)
             {
                 if (other.gameObject.layer == this.buildingLayer)
@@ -34,6 +41,11 @@
 
         public void OnCollisionEnter(Collision collision)
         {
+            if (collider.collider.gameObject.CompareTag(CombatUnit.StoreTag))
+            {
+                return;
+            }
+
             if (this.isEvil || collision.collider.gameObject.layer == this.evilLayer)
             {
                 if (collision.collider.gameObject.layer == this.buildingLayer)
