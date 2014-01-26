@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -44,6 +45,17 @@ MonoBehaviour:
   TilePrefab: {fileID: 100000, guid: ede3f20dad2927b46b9584ccf62bfe7f, type: 2}
   WhiteMaterial: {fileID: 2100000, guid: 3451923a755a4d64285eb2101ee50d01, type: 2}
   BlackMaterial: {fileID: 2100000, guid: 55a9fee0471f5e04d9ae92fe13c40889, type: 2}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d474190075e784d95c37f8dae954ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

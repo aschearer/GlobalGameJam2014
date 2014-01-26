@@ -10,12 +10,13 @@
 
         public void StartCheckout(GameObject buildingPrefab)
         {
+            Debug.Log("Starting checkout");
             this.SelectedBuildingPrefab = buildingPrefab;
         }
 
         public void FinishCheckout(GameObject purchasedBuilding)
         {
-            Debug.Log(purchasedBuilding);
+            Debug.Log("Finishing checkout");
             purchasedBuilding.SendMessage("Purchased");
             this.SelectedBuildingPrefab = null;
         }
