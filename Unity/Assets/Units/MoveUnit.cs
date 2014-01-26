@@ -33,7 +33,6 @@
         {
             targetAngle = (targetAngle + 360) % 360;
             var currentAngle = (this.transform.rotation.eulerAngles.y + 360) % 360;
-            Debug.Log(currentAngle + " = " + targetAngle + " = " + (currentAngle - targetAngle));
             var delta = Math.Abs(currentAngle - targetAngle);
             if (Math.Abs(delta - 180) < 10)
             {
