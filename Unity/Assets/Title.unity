@@ -626,7 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
   NumberOfUnitsToSpawn: 5
-  SpawnDuration: 2
+  SpawnDuration: 1
   SecondsTillSpawn: 5
   NumberOfSpawns: 3
 --- !u!4 &1114608929
@@ -681,7 +681,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
       propertyPath: NumberOfRows
-      value: 12
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: EnemyIncreasePerWave
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: NumberOfEnemiesToSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: SecondsTillSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: SecondsTillSpawnDecreasePerWave
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
@@ -790,7 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumberOfColumns: 6
-  NumberOfRows: 12
+  NumberOfRows: 10
   TilePrefab: {fileID: 100000, guid: ede3f20dad2927b46b9584ccf62bfe7f, type: 2}
   EvilTilePrefab: {fileID: 100000, guid: 48dba19eca3a6ee4b8011921d616eb90, type: 2}
   WhiteMaterial: {fileID: 2100000, guid: 3451923a755a4d64285eb2101ee50d01, type: 2}
@@ -845,7 +861,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
-  NumberOfEnemiesToSpawn: 4
+  NumberOfEnemiesToSpawn: 1
+  EnemyIncreasePerWave: 1
   SpawnDuration: 1
   SecondsTillSpawn: 10
+  SecondsTillSpawnDecreasePerWave: .100000001
+  MinSecondsTillSpawn: 1
   EvilUnitMaterial: {fileID: 2100000, guid: c1f8ad633fee11144a6863d94cbef6cd, type: 2}
