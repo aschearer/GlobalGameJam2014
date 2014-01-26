@@ -20,6 +20,13 @@
 
         private GameObject spawnTile;
 
+        private int layer;
+
+        public void Start()
+        {
+            this.layer = LayerMask.NameToLayer("Evil Units");
+        }
+
         public void Update()
         {
             this.spawnTimer += Time.deltaTime;
@@ -43,6 +50,7 @@
                         this.UnitPrefab, 
                         position, 
                         this.spawnTile.transform.rotation);
+                    unit.layer = this.layer;
                     unit.transform.parent = this.transform;
                 }
             }

@@ -128,7 +128,7 @@ GameObject:
   - 4: {fileID: 190028814}
   - 65: {fileID: 190028816}
   - 114: {fileID: 190028815}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottom Killzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - 4: {fileID: 299685087}
   - 65: {fileID: 299685088}
   - 114: {fileID: 299685089}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Top Killzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - 4: {fileID: 510586165}
   - 65: {fileID: 510586167}
   - 114: {fileID: 510586166}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Right Killzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - 4: {fileID: 530784882}
   - 65: {fileID: 530784884}
   - 114: {fileID: 530784883}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left Killzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1579404964}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Killzones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
