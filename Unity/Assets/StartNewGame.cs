@@ -6,6 +6,7 @@
     {
         public void OnMouseDown()
         {
+			Debug.Log("FOOOOO");
             Application.LoadLevel("Game");
         }
     }
