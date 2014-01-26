@@ -221,6 +221,10 @@ Prefab:
       propertyPath: NumberOfRows
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: EnemyIncreasePerWave
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
   m_RootGameObject: {fileID: 1857682300}
@@ -1256,7 +1260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 0}
   NumberOfEnemiesToSpawn: 1
-  EnemyIncreasePerWave: 2
+  EnemyIncreasePerWave: 1
   SecondsTillSpawn: 10
   SecondsTillSpawnDecreasePerWave: .100000001
   MinSecondsTillSpawn: 1
