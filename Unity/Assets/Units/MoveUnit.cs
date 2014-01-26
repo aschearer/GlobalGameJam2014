@@ -8,7 +8,7 @@
         {
             var position = this.transform.position;
             position.x += Time.deltaTime * 1;
-            this.transform.position = position;
+            this.rigidbody.MovePosition(position);
         }
     }
 }
