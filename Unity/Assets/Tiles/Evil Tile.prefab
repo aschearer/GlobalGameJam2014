@@ -11,6 +11,7 @@ GameObject:
   - 65: {fileID: 6500000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
+  - 114: {fileID: 11400000}
   m_Layer: 12
   m_Name: Evil Tile
   m_TagString: Evil Tile
@@ -69,6 +70,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4074d7b035e62dd4c9d60d72af4ff519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
+  EvilUnitMaterial: {fileID: 2100000, guid: c1f8ad633fee11144a6863d94cbef6cd, type: 2}
+  EvilTileWarningMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a,
+    type: 2}
+  EvilTileMaterial: {fileID: 2100000, guid: 64825883e15d1484b835872645d45d0f, type: 2}
+  SecondsWarningTillSpawn: 3
+  SpawnDuration: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

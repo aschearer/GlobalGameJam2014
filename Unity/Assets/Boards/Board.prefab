@@ -11,9 +11,9 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -81,20 +81,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4074d7b035e62dd4c9d60d72af4ff519, type: 3}
+  m_Script: {fileID: 11500000, guid: 5dfc572642ddb23489cf521b073a7e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
+  UnitPrefab: {fileID: 0}
   NumberOfEnemiesToSpawn: 1
-  EnemyIncreasePerWave: 1
-  SpawnDuration: 1
+  EnemyIncreasePerWave: 2
   SecondsTillSpawn: 10
-  SecondsWarningTillSpawn: 3
   SecondsTillSpawnDecreasePerWave: .100000001
   MinSecondsTillSpawn: 1
-  EvilUnitMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a, type: 2}
-  EvilTileWarningMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a,
-    type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d2207e762d1d849b662d0f735ee4b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillNextLava: 8
+  TimeTillNextLava: 20
   LavaPrefab: {fileID: 100000, guid: e0ef722d4de2fb54bb2b1ba3af563f0e, type: 2}
 --- !u!1001 &100100000
 Prefab:
