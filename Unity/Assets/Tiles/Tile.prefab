@@ -32,7 +32,7 @@ GameObject:
   - 23: {fileID: 2300002}
   - 95: {fileID: 9500000}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155648c8ee430b74abbc97239431a0f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActiveTagName: Active
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -4,10 +4,12 @@
 
     public class MoveUnit : MonoBehaviour
     {
+        public Vector3 Velocity = new Vector3(0, 0, 1);
+
         public void Update()
         {
             var position = this.transform.position;
-            position.x += Time.deltaTime * 1;
+            position += this.transform.rotation * this.Velocity * Time.deltaTime;
             this.rigidbody.MovePosition(position);
         }
     }

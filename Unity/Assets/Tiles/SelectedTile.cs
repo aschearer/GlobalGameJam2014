@@ -14,20 +14,21 @@
 
         private float y;
 
-        private GameObject selector;
+        private GameObject arrow;
 
-        private Vector3 selectorAngle;
+        private Vector3 arrowAngle;
 
         public void Start()
         {
             this.y = this.transform.position.y;
-            this.selector = this.transform.FindChild("Selector").gameObject;
-            this.selectorAngle = this.selector.transform.rotation.eulerAngles;
+            this.arrow = this.transform.FindChild("Arrow").gameObject;
+            this.arrowAngle = this.arrow.transform.rotation.eulerAngles;
         }
 
         public void Activate()
         {
             this.tag = this.ActiveTagName;
+            Debug.Log(this.arrow.transform.rotation.eulerAngles);
         }
 
         public void Deactivate()
@@ -43,17 +44,17 @@
             var position = this.transform.position;
             this.transform.position = new Vector3(position.x, this.y + offset, position.z);
 
-            this.selector.SetActive(isSelected || isActive);
+            this.arrow.SetActive(isSelected || isActive);
             if (isSelected)
             {
                 var delta = Camera.main.WorldToScreenPoint(this.transform.position) - Input.mousePosition;
                 var angle = (float)(Math.Atan2(delta.y, delta.x) * Mathf.Rad2Deg);
                 var snappedAngle = (float)(Math.Floor((angle + 45) / 90) * 90);
 
-                this.selector.transform.rotation = Quaternion.Euler(
-                    this.selectorAngle.x,
-                    this.selectorAngle.y - snappedAngle,
-                    this.selectorAngle.z);
+                this.arrow.transform.rotation = Quaternion.Euler(
+                    this.arrowAngle.x,
+                    this.arrowAngle.y - snappedAngle,
+                    this.arrowAngle.z);
             }
         }
     }
