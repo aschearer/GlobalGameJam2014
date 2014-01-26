@@ -43,17 +43,7 @@
                 return;
             }
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            bool hitSomething = Physics.Raycast(ray, out hit);
-            if (!hitSomething || this.selected != hit.collider.gameObject)
-            {
-                this.selected.SendMessage("Activate");
-            }
-            else if (this.selected != null)
-            {
-                this.selected.SendMessage("Deactivate");
-            }
+            this.selected.SendMessage("Activate");
 
             this.selected = null;
         }
