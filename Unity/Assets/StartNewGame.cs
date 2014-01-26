@@ -4,10 +4,12 @@
 
     public class StartNewGame : MonoBehaviour
     {
-        public void OnMouseDown()
+        public void Update()
         {
-			Debug.Log("FOOOOO");
-            Application.LoadLevel("Game");
+            if (Input.GetMouseButtonDown(0))
+            {
+                Application.LoadLevel("Game");
+            }
         }
     }
 }

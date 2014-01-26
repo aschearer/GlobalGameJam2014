@@ -429,7 +429,7 @@ GUIText:
   m_GameObject: {fileID: 1995703526}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Click here to play
+  m_Text: Click to play
   m_Anchor: 4
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
