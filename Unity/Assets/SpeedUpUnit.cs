@@ -27,22 +27,30 @@
 	    {
 	        this.isOn = true;
 	    }
+
+	    public void Update()
+	    {
+            if (!this.isOn)
+            {
+                return;
+            }
+
+            this.elapsedTime += Time.deltaTime;
+            if (this.elapsedTime >= this.TimeToLive)
+            {
+                GameObject.Destroy(this.gameObject);
+                if (this.gameObject.transform.parent.gameObject.layer == this.tileLayer)
+                {
+                    this.gameObject.transform.parent.gameObject.tag = SelectedTile.EmptyTagName;
+                }
+            }
+	    }
 		
 		public void OnTriggerEnter(Collider other)
 		{
 		    if (!this.isOn)
 		    {
 		        return;
-		    }
-
-		    this.elapsedTime += Time.deltaTime;
-		    if (this.elapsedTime >= this.TimeToLive)
-		    {
-                GameObject.Destroy(this.gameObject);
-                if (this.gameObject.transform.parent.gameObject.layer == this.tileLayer)
-                {
-                    this.gameObject.transform.parent.gameObject.tag = SelectedTile.EmptyTagName;
-                }
 		    }
 
 			if (other.gameObject.layer == this.unitLayer)
