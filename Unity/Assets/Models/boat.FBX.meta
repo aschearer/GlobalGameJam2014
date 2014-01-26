@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4006d07355deee5429cfdc79d8af7a3a
+guid: 897f3d72daeb5484485dc937cc0defdc
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -7,8 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: EvilTile
-    4300002: EvilTile_02
+    4300000: Boat
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -10,7 +10,9 @@
 
         public Material EvilTileWarningMaterial;
 
-        public Material EvilTileMaterial;
+		public Material EvilTileMaterial;
+
+		private GameObject boatModel;
 
         public float SecondsWarningTillSpawn = 3f;
 
@@ -26,7 +28,9 @@
 
         public void Start()
         {
-            this.layer = LayerMask.NameToLayer("Evil Units");
+			this.boatModel = this.transform.FindChild("Boat").gameObject;
+			this.layer = LayerMask.NameToLayer("Evil Units");
+			boatModel.renderer.enabled = false;
         }
 
         public void SpawnUnits(int howMany)
@@ -34,7 +38,7 @@
             Debug.Log("Spawning " + howMany + " units");
             this.spawnTimer = this.SecondsWarningTillSpawn;
             this.enemiesToSpawn = howMany;
-            this.renderer.material = this.EvilTileWarningMaterial;
+			boatModel.renderer.enabled = true;
         }
         
         public void Update()
@@ -63,8 +67,8 @@
                     unit.transform.FindChild("Model").renderer.material = this.EvilUnitMaterial;
 
                     if (this.enemiesToSpawn == 0)
-                    {
-                        this.renderer.material = this.EvilTileMaterial;
+					{
+						boatModel.renderer.enabled = false;
                     }
                 }
             }
