@@ -6,11 +6,13 @@
     {
         public GameObject UnitPrefab;
 
-        public int NumberOfEnemiesToSpawn = 20;
+        public int NumberOfUnitsToSpawn = 20;
 
         public float SpawnDuration = 1;
 
         public float SecondsTillSpawn = 5;
+
+        public int NumberOfSpawns = 1;
 
         private float spawnTimer;
 
@@ -18,13 +20,16 @@
 
         private GameObject board;
 
-        private int enemiesToSpawn;
+        private int unitsToSpawn;
 
         private bool isSpawning;
+
+        private int spawnsRemaining;
 
         public void Start()
         {
             this.board = GameObject.Find("Board").gameObject;
+            this.spawnsRemaining = this.NumberOfSpawns;
         }
 
         public void TurnOn()
@@ -39,29 +44,33 @@
                 return;
             }
 
-            this.spawnTimer += Time.deltaTime;
-            if (this.spawnTimer >= this.SecondsTillSpawn)
+            if (this.spawnsRemaining > 0)
             {
-                this.spawnTimer -= this.SecondsTillSpawn;
-                this.enemiesToSpawn += this.NumberOfEnemiesToSpawn;
+                this.spawnTimer += Time.deltaTime;
+                while (this.spawnTimer >= this.SecondsTillSpawn)
+                {
+                    this.spawnTimer -= this.SecondsTillSpawn;
+                    this.unitsToSpawn += this.NumberOfUnitsToSpawn;
+                    this.spawnsRemaining--;
+                }
             }
 
-            if (this.enemiesToSpawn > 0)
+            if (this.unitsToSpawn > 0)
             {
                 this.createUnitTimer += Time.deltaTime;
-                var timeBetweenUnitSpawns = this.SpawnDuration / this.NumberOfEnemiesToSpawn;
-                if (this.createUnitTimer >= timeBetweenUnitSpawns && this.enemiesToSpawn > 0)
+                var timeBetweenUnitSpawns = this.SpawnDuration / this.NumberOfUnitsToSpawn;
+                while (this.createUnitTimer >= timeBetweenUnitSpawns)
                 {
                     this.createUnitTimer -= timeBetweenUnitSpawns;
-                    this.enemiesToSpawn--;
-					var position = this.transform.position;
-//                    var position = new Vector3(
- //                           this.transform.position.x + Random.Range(0, this.boundingBox.size.x),
-  //                          this.transform.position.y,
-   //                         this.transform.position.z + Random.Range(0, this.boundingBox.size.z));
+                    this.unitsToSpawn--;
+                    var position = this.transform.position;
                     var unit = (GameObject)GameObject.Instantiate(this.UnitPrefab, position, Quaternion.identity);
                     unit.transform.parent = this.board.transform;
                 }
+            }
+            else if (this.spawnsRemaining == 0)
+            {
+                GameObject.Destroy(this.transform.parent.gameObject);
             }
         }
     }

@@ -109,6 +109,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
+      propertyPath: NumberOfUnitsToSpawn
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
   m_RootGameObject: {fileID: 1076395301}
@@ -613,9 +617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
-  NumberOfEnemiesToSpawn: 20
+  NumberOfUnitsToSpawn: 10
   SpawnDuration: 2
   SecondsTillSpawn: 2
+  NumberOfSpawns: 1
 --- !u!4 &1114608929
 Transform:
   m_ObjectHideFlags: 0
@@ -834,4 +839,4 @@ MonoBehaviour:
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
   NumberOfEnemiesToSpawn: 4
   SpawnDuration: 1
-  SecondsTillSpawn: 2
+  SecondsTillSpawn: 10

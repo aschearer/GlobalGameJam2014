@@ -85,7 +85,7 @@ MonoBehaviour:
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
   NumberOfEnemiesToSpawn: 4
   SpawnDuration: 1
-  SecondsTillSpawn: 2
+  SecondsTillSpawn: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
