@@ -8,11 +8,19 @@
 
         public int NumberOfEnemiesToSpawn = 20;
 
+		public int EnemyIncreasePerWave = 2;
+
         public float SpawnDuration = 1;
 
-        public float SecondsTillSpawn = 5;
+        public float SecondsTillSpawn = 10f;
+
+		public float SecondsTillSpawnDecreasePerWave = 0.1f;
+
+		public float MinSecondsTillSpawn = 1f;
 
         public Material EvilUnitMaterial;
+
+		private int wave = 0;
 
         private float spawnTimer;
 
@@ -32,11 +40,13 @@
         public void Update()
         {
             this.spawnTimer += Time.deltaTime;
-            if (this.spawnTimer >= this.SecondsTillSpawn)
+			float timeUntilSpawn = Mathf.Max(this.SecondsTillSpawn - this.wave * this.SecondsTillSpawnDecreasePerWave, MinSecondsTillSpawn);
+			if (this.spawnTimer >= timeUntilSpawn)
             {
-                this.spawnTimer -= this.SecondsTillSpawn;
-                this.enemiesToSpawn += this.NumberOfEnemiesToSpawn;
+				this.spawnTimer -= timeUntilSpawn;
+                this.enemiesToSpawn += this.NumberOfEnemiesToSpawn + this.wave * this.EnemyIncreasePerWave;
                 this.spawnTile = this.GetEvilTile();
+				this.wave++;
             }
 
             if (this.enemiesToSpawn > 0)
