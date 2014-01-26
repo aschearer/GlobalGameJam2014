@@ -121,6 +121,10 @@ Prefab:
       propertyPath: NumberOfSpawns
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400002, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}

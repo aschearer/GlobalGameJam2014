@@ -1,5 +1,7 @@
 ﻿namespace Assets.Units
 {
+    using Assets.Tiles;
+
     using UnityEngine;
 
     public class SpawnUnits : MonoBehaviour
@@ -70,6 +72,10 @@
             }
             else if (this.spawnsRemaining == 0)
             {
+                // Tile is the grand parent
+                this.transform.parent.parent.tag = SelectedTile.EmptyTagName;
+
+                // Village is the parent
                 GameObject.Destroy(this.transform.parent.gameObject);
             }
         }

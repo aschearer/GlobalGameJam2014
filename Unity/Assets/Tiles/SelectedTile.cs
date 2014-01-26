@@ -10,6 +10,10 @@
 
         public const string ActiveTagName = "Active";
 
+        public const string EmptyTagName = "Empty";
+
+        public const string OccupiedTagName = "Occupied";
+
         public float YOffset = 0.25f;
 
         private float y;
@@ -32,7 +36,7 @@
 
         public void Deactivate()
         {
-            this.tag = null;
+            this.tag = SelectedTile.EmptyTagName;
         }
 
         public void Update()

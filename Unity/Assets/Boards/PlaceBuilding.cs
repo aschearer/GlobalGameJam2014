@@ -1,6 +1,7 @@
 ﻿namespace Assets.Boards
 {
     using Assets.Store;
+    using Assets.Tiles;
 
     using UnityEngine;
 
@@ -41,7 +42,7 @@
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             int layerMask = 1 << this.tileLayer;
-            if (Physics.Raycast(ray, out hit, 100, layerMask))
+            if (Physics.Raycast(ray, out hit, 100, layerMask) && hit.collider.CompareTag(SelectedTile.EmptyTagName))
             {
                 this.building.SetActive(true);
                 this.building.transform.position = hit.collider.transform.position;
@@ -55,6 +56,8 @@
             {
                 Debug.Log("Placing building");
                 this.checkout.SendMessage("FinishCheckout", this.building);
+                this.building.transform.parent = hit.collider.transform;
+                hit.collider.tag = SelectedTile.OccupiedTagName;
                 this.building = null;
             }
         }
