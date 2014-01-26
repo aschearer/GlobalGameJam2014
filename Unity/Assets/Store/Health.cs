@@ -20,6 +20,10 @@
         public void DoDamage()
         {
             this.currentLife = Math.Max(0, this.currentLife - this.DamagePerUnit);
+            if (this.currentLife == 0)
+            {
+                Application.LoadLevel("Title");
+            }
         }
 
         public void Update()
