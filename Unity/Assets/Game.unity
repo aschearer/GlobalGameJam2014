@@ -314,7 +314,7 @@ TextMesh:
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 8
-  m_FontSize: 48
+  m_FontSize: 32
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 121864569d31267499366f158e093cdb, type: 3}
@@ -680,9 +680,9 @@ GUIText:
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: 121864569d31267499366f158e093cdb, type: 3}
+  m_Font: {fileID: 12800000, guid: 2b17a90753aece941be9e15ea493a5fa, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 48
+  m_FontSize: 32
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -906,7 +906,7 @@ TextMesh:
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 8
-  m_FontSize: 48
+  m_FontSize: 32
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 121864569d31267499366f158e093cdb, type: 3}
@@ -1064,9 +1064,9 @@ GUIText:
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: 121864569d31267499366f158e093cdb, type: 3}
+  m_Font: {fileID: 12800000, guid: 2b17a90753aece941be9e15ea493a5fa, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 48
+  m_FontSize: 32
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2

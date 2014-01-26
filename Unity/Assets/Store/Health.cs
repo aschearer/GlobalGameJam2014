@@ -31,7 +31,8 @@
 
         public void Update()
         {
-            this.GetComponent<GUIText>().text = "Health: " + this.currentLife;
+			this.GetComponent<GUIText>().text = "Outsiders\nlet past: \n" + (this.StartingLife - this.currentLife)
+												+ " of " + this.StartingLife;
             Health.LatestPlayThrough += Time.deltaTime;
         }
     }
