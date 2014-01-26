@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd286f05785cdf646a1541bd9497b2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillNextGoldMine: 4
+  TimeTillNextGoldMine: 10
   GoldMinePrefab: {fileID: 100000, guid: e5fe776e6d927634b9e946ee3273beac, type: 2}
 --- !u!1001 &100100000
 Prefab:

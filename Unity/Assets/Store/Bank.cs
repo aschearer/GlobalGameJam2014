@@ -38,5 +38,10 @@
 
             this.GetComponent<GUIText>().text = "Gold: " + this.gold;
         }
+
+        public void AddGold(int goldPerUnit)
+        {
+            this.gold += goldPerUnit;
+        }
     }
 }
