@@ -18,18 +18,27 @@
 
         private GameObject board;
 
-        private BoxCollider boundingBox;
-
         private int enemiesToSpawn;
+
+        private bool isSpawning;
 
         public void Start()
         {
             this.board = GameObject.Find("Board").gameObject;
-            this.boundingBox = this.GetComponent<BoxCollider>();
+        }
+
+        public void StartSpawning()
+        {
+            this.isSpawning = true;
         }
 
         public void Update()
         {
+            if (!this.isSpawning)
+            {
+                return;
+            }
+
             this.spawnTimer += Time.deltaTime;
             if (this.spawnTimer >= this.SecondsTillSpawn)
             {

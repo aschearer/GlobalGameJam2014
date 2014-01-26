@@ -28,7 +28,6 @@
         public void Activate()
         {
             this.tag = this.ActiveTagName;
-            Debug.Log(this.arrow.transform.rotation.eulerAngles);
         }
 
         public void Deactivate()
