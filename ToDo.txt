@@ -1,0 +1,29 @@
+- Unit vs. enemy collision.
+
+	- Mutual killed.
+
+- Lose condition. (X enemies make it to the bottom)
+
+- Escalating enemy spawns.
+
+- Win condition. (Time survived)
+
+- Randomly placed buildings.
+
+- "Danger building" that kills units.
+
+- Arrows can't be overwritten.
+
+- Gold.
+
+	- UI to display player's gold.
+
+	- Building gold costs.
+
+	- Gradual gold accumulation over time.
+
+- Gold mine.
+
+	- Converts units into gold.
+
+	- Randomly placed.
