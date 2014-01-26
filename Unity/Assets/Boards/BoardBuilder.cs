@@ -22,7 +22,7 @@
                 for (int row = 0; row < this.NumberOfRows; row++)
                 {
                     var position = new Vector3(col, 0, row);
-                    var tile = (GameObject)GameObject.Instantiate(this.TilePrefab, position, Quaternion.identity);
+                    var tile = (GameObject)GameObject.Instantiate(this.TilePrefab, position, this.TilePrefab.transform.rotation);
                     tile.transform.parent = this.transform;
                     bool isWhite = i % 2 == 0;
                     tile.renderer.material = isWhite ? this.WhiteMaterial : this.BlackMaterial;
