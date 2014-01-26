@@ -6,6 +6,8 @@
 
     public class Health : MonoBehaviour
     {
+        public static float LatestPlayThrough;
+
         public int StartingLife = 100;
 
         public int DamagePerUnit = 1;
@@ -15,6 +17,7 @@
         public void Start()
         {
             this.currentLife = this.StartingLife;
+            Health.LatestPlayThrough = 0;
         }
 
         public void DoDamage()
@@ -29,6 +32,7 @@
         public void Update()
         {
             this.GetComponent<GUIText>().text = "Health: " + this.currentLife;
+            Health.LatestPlayThrough += Time.deltaTime;
         }
     }
 }
