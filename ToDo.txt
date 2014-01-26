@@ -6,8 +6,6 @@
 
 - Randomly placed buildings.
 
-- Fix movement glitches, especially when sped u
-
-- Fix arrow placement
+- Fix movement glitches, especially when speed up
 
 - Fix enemy warnings
