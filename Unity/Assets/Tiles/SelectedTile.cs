@@ -6,9 +6,9 @@
 
     public class SelectedTile : MonoBehaviour
     {
-        public string SelectedTagName = "Selected";
+        public const string SelectedTagName = "Selected";
 
-        public string ActiveTagName = "Active";
+        public const string ActiveTagName = "Active";
 
         public float YOffset = 0.25f;
 
@@ -27,7 +27,7 @@
 
         public void Activate()
         {
-            this.tag = this.ActiveTagName;
+            this.tag = SelectedTile.ActiveTagName;
         }
 
         public void Deactivate()
@@ -37,8 +37,8 @@
 
         public void Update()
         {
-            bool isSelected = this.CompareTag(this.SelectedTagName);
-            bool isActive = this.CompareTag(this.ActiveTagName);
+            bool isSelected = this.CompareTag(SelectedTile.SelectedTagName);
+            bool isActive = this.CompareTag(SelectedTile.ActiveTagName);
             float offset = isSelected ? this.YOffset : 0;
             var position = this.transform.position;
             this.transform.position = new Vector3(position.x, this.y + offset, position.z);

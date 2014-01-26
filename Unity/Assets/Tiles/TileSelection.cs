@@ -28,7 +28,8 @@
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             int layerMask = 1 << this.tileLayer;
-            if (Physics.Raycast(ray, out hit, 100, layerMask))
+            if (Physics.Raycast(ray, out hit, 100, layerMask) && 
+                !hit.collider.gameObject.CompareTag(SelectedTile.ActiveTagName))
             {
                 this.selected = hit.collider.gameObject;
                 this.selected.tag = "Selected";
