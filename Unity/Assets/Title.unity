@@ -756,6 +756,7 @@ GameObject:
   - 114: {fileID: 1857682301}
   - 114: {fileID: 1857682304}
   - 114: {fileID: 1857682303}
+  - 114: {fileID: 1857682305}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -818,3 +819,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxNumberOfActiveTiles: 3
   ActiveTagName: Active
+--- !u!114 &1857682305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1534360619}
+  m_GameObject: {fileID: 1857682300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4074d7b035e62dd4c9d60d72af4ff519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
+  NumberOfEnemiesToSpawn: 20
+  SpawnDuration: 1
+  SecondsTillSpawn: 5
