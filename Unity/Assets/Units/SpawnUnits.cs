@@ -45,10 +45,11 @@
                 {
                     this.createUnitTimer -= timeBetweenUnitSpawns;
                     this.enemiesToSpawn--;
-                    var position = new Vector3(
-                            this.transform.position.x + Random.Range(0, this.boundingBox.size.x),
-                            this.transform.position.y,
-                            this.transform.position.z + Random.Range(0, this.boundingBox.size.z));
+					var position = this.transform.position;
+//                    var position = new Vector3(
+ //                           this.transform.position.x + Random.Range(0, this.boundingBox.size.x),
+  //                          this.transform.position.y,
+   //                         this.transform.position.z + Random.Range(0, this.boundingBox.size.z));
                     var unit = (GameObject)GameObject.Instantiate(this.UnitPrefab, position, Quaternion.identity);
                     unit.transform.parent = this.board.transform;
                 }

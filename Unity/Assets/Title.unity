@@ -184,9 +184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitPrefab: {fileID: 100000, guid: 26e62c52b1f86f245b5d8c2c0cf90395, type: 2}
-  NumberOfEnemiesToSpawn: 12
-  SpawnDuration: 1
-  SecondsTillSpawn: 1
+  NumberOfEnemiesToSpawn: 20
+  SpawnDuration: 2
+  SecondsTillSpawn: 2
 --- !u!4 &1054443526
 Transform:
   m_ObjectHideFlags: 0
@@ -209,7 +209,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .5, y: .5, z: .5}
+  m_Size: {x: .100000001, y: .100000001, z: .100000001}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1079122659
 GameObject:
@@ -310,7 +310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: NumberOfEnemiesToSpawn
-      value: 12
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: m_IsActive
@@ -318,7 +318,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
       propertyPath: SpawnDuration
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
+      propertyPath: m_Size.x
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
+      propertyPath: m_Size.y
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
+      propertyPath: m_Size.z
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
+      propertyPath: SecondsTillSpawn
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cd21dd4dd411cf4f8e15008d5a992a2, type: 2}
