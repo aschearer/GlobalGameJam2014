@@ -24,10 +24,9 @@
                 bool shouldIncrement = false;
                 for (int row = 0; row < this.NumberOfRows + 1; row++)
                 {
-                    if ((col == 0 && row == 0)
-                        || (col == 0 && row == this.NumberOfRows)
-                        || (col == this.NumberOfColumns && row == 0)
-                        || (col == this.NumberOfColumns && row == this.NumberOfRows))
+                    if ((row == 0)
+                        || (col == 0)
+                        || (col == this.NumberOfColumns))
                     {
                         continue;
                     }
