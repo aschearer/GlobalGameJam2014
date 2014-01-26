@@ -43,6 +43,7 @@ ModelImporter:
     4300010: Box006
     4300012: Box007
     4300014: terrain
+    4300016: Box009
     9500000: //RootNode
   materials:
     importMaterials: 1
