@@ -113,6 +113,14 @@ Prefab:
       propertyPath: SecondsWarningTillSpawn
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: NumberOfColumns
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: NumberOfRows
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
   m_RootGameObject: {fileID: 1857682300}
@@ -127,7 +135,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.63017845
+      value: -3.78616238
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
       propertyPath: m_LocalPosition.y
@@ -135,7 +143,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.72241306
+      value: -.258460999
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5fc509f993988e342ac8a428b6c02a36, type: 2}
       propertyPath: m_LocalRotation.x
@@ -199,8 +207,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 190028813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.29161501}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.94979906}
+  m_LocalScale: {x: 1.61249995, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1579404964}
 --- !u!114 &190028815
@@ -250,8 +258,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 299685086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 7.23472929}
+  m_LocalScale: {x: 2.45000005, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1579404964}
 --- !u!65 &299685088
@@ -301,7 +309,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510586164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.73647785, y: 0, z: 3}
+  m_LocalPosition: {x: 5.79259062, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1579404964}
@@ -352,7 +360,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 530784881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 3}
+  m_LocalPosition: {x: -6.57140398, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1579404964}
@@ -454,8 +462,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 578876010}
-  m_LocalRotation: {x: .642787635, y: 0, z: 0, w: .766044497}
-  m_LocalPosition: {x: 0, y: 10, z: 3.5}
+  m_LocalRotation: {x: .537299633, y: 0, z: 0, w: .843391418}
+  m_LocalPosition: {x: 0, y: 5, z: -.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -550,7 +558,7 @@ Transform:
   m_PrefabInternal: {fileID: 119511884}
   m_GameObject: {fileID: 1076395301}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -9.63017845, y: 4.31904709e-07, z: 7.72241306}
+  m_LocalPosition: {x: -3.78616238, y: 4.31904709e-07, z: -.258460999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1114608929}
@@ -942,8 +950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e585d8e2fa2b99e428f991bde2551ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOfColumns: 6
-  NumberOfRows: 10
+  NumberOfColumns: 10
+  NumberOfRows: 6
   TilePrefab: {fileID: 100000, guid: ede3f20dad2927b46b9584ccf62bfe7f, type: 2}
   EvilTilePrefab: {fileID: 100000, guid: 48dba19eca3a6ee4b8011921d616eb90, type: 2}
   WhiteMaterial: {fileID: 2100000, guid: 3451923a755a4d64285eb2101ee50d01, type: 2}
