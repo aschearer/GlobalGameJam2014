@@ -109,6 +109,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
+      propertyPath: SecondsWarningTillSpawn
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f2f6ed3aecc6b74daba7746e19316b5, type: 2}
   m_RootGameObject: {fileID: 1857682300}
@@ -998,7 +1002,7 @@ MonoBehaviour:
   EnemyIncreasePerWave: 1
   SpawnDuration: 1
   SecondsTillSpawn: 10
-  SecondsWarningTillSpawn: 3
+  SecondsWarningTillSpawn: 5
   SecondsTillSpawnDecreasePerWave: .100000001
   MinSecondsTillSpawn: 1
   EvilUnitMaterial: {fileID: 2100000, guid: c7e19cac17eb2614ea8d21105e7d723a, type: 2}

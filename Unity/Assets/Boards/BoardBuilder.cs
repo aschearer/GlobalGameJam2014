@@ -88,7 +88,7 @@
 
         private void CenterBoard()
         {
-            float xOffset = (this.NumberOfColumns / 2f) - 0.5f;
+            float xOffset = (this.NumberOfColumns / 2f);
             var position = this.transform.position;
             position.x -= xOffset;
             this.transform.position = position;
