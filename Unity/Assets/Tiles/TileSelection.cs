@@ -12,6 +12,8 @@
 
         private Checkout checkout;
 
+        private Vector3 selectedPoint;
+
         public void Start()
         {
             this.checkout = GameObject.Find("Store").GetComponent<Checkout>();
@@ -31,6 +33,7 @@
             if (Physics.Raycast(ray, out hit, 100, layerMask) &&
                 hit.collider.gameObject.CompareTag(SelectedTile.EmptyTagName))
             {
+                this.selectedPoint = Input.mousePosition;
                 this.selected = hit.collider.gameObject;
                 this.selected.tag = "Selected";
             }
@@ -43,9 +46,21 @@
                 return;
             }
 
+
             this.selected.SendMessage("Activate");
+            var currentPoint = Input.mousePosition;
+            var distance = Vector3.Distance(currentPoint, this.selectedPoint);
+            if (distance > 30)
+            {
+                this.selected.SendMessage("Activate");
+            }
+            else
+            {
+                this.selected.SendMessage("Deactivate");
+            }
 
             this.selected = null;
+
         }
     }
 }
