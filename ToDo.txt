@@ -6,3 +6,10 @@
 
 - Randomly placed buildings.
 
+- Time limit on stables
+
+- Fix movement glitches, especially when sped u
+
+- Fix arrow placement
+
+- Fix enemy warnings
