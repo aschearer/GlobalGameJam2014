@@ -24,6 +24,7 @@
         public void FinishCheckout(GameObject purchasedBuilding)
         {
             Debug.Log("Finishing checkout");
+			Debug.Log(purchasedBuilding);
             purchasedBuilding.SendMessage("Purchased");
             this.bank.SendMessage("Deduct", purchasedBuilding.GetComponent<Buyable>().Price);
             this.SelectedBuildingPrefab = null;
