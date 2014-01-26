@@ -12,6 +12,8 @@
 
         public float SecondsTillSpawn = 5;
 
+        public Material EvilUnitMaterial;
+
         private float spawnTimer;
 
         private float createUnitTimer;
@@ -52,6 +54,7 @@
                         this.spawnTile.transform.rotation);
                     unit.layer = this.layer;
                     unit.transform.parent = this.transform;
+                    unit.transform.FindChild("Model").renderer.material = this.EvilUnitMaterial;
                 }
             }
         }

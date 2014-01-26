@@ -848,3 +848,4 @@ MonoBehaviour:
   NumberOfEnemiesToSpawn: 4
   SpawnDuration: 1
   SecondsTillSpawn: 10
+  EvilUnitMaterial: {fileID: 2100000, guid: c1f8ad633fee11144a6863d94cbef6cd, type: 2}
