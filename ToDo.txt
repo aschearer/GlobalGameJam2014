@@ -6,8 +6,3 @@
 
 - Randomly placed buildings.
 
-- "Danger building" that kills units.
-
-- Gold.
-
-	- UI to display player's gold.
