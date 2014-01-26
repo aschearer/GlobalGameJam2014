@@ -1,5 +1,7 @@
 ﻿namespace Assets.Store
 {
+    using Assets.Buildings;
+
     using UnityEngine;
 
     public class StartPurchase : MonoBehaviour
@@ -8,14 +10,23 @@
 
         private Checkout checkout;
 
+        private Bank bank;
+
+        private Buyable buyable;
+
         public void Start()
         {
             this.checkout = GameObject.Find("Store").GetComponent<Checkout>();
+            this.bank = GameObject.Find("Bank").GetComponent<Bank>();
+            this.buyable = this.GetComponent<Buyable>();
         }
 
         public void OnMouseDown()
         {
-            this.checkout.SendMessage("StartCheckout", this.PurchasePrefab);
+            if (this.bank.CanPurchase(this.buyable.Price))
+            {
+                this.checkout.SendMessage("StartCheckout", this.PurchasePrefab);
+            }
         }
     }
 }
