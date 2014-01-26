@@ -12,7 +12,9 @@ GameObject:
   - 23: {fileID: 2300000}
   - 95: {fileID: 9500000}
   - 65: {fileID: 6500000}
-  m_Layer: 0
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  m_Layer: 11
   m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,6 +86,29 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c635d234f9bed74cb9fd641dd0a1cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd591b5e1f83d408a8c76ef905289b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeToLive: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

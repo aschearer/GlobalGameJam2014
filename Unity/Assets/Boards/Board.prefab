@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -107,6 +108,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeTillNextGoldMine: 10
   GoldMinePrefab: {fileID: 100000, guid: e5fe776e6d927634b9e946ee3273beac, type: 2}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d2207e762d1d849b662d0f735ee4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeTillNextLava: 8
+  LavaPrefab: {fileID: 100000, guid: e0ef722d4de2fb54bb2b1ba3af563f0e, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
