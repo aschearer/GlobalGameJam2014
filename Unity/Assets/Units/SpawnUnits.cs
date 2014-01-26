@@ -27,7 +27,7 @@
             this.board = GameObject.Find("Board").gameObject;
         }
 
-        public void StartSpawning()
+        public void TurnOn()
         {
             this.isSpawning = true;
         }
